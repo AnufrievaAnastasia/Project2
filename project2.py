@@ -1,16 +1,17 @@
 # kitchen assistant for Russian Housewives,
 # helps to choose a dish according to the skill and amount of time
 # required to enter the type of dish, skill level and cooking time
+# as a result, you can get a recipe
 
 print("Уровень сложности: ребенок, мастер или шеф")
-level = str(input())
+level = str(input())                                              # select skill level
 
 if level == "ребенок":
     print("Что вы хотите приготовить: завтрак, обед или ужин")    # choose a dish option
     meal1 = str(input())
     if meal1 == "завтрак":
         print("Время приготовления(мин):")
-        min1 = int(input())                                       # enter the time taken to prepare the dish
+        min1 = int(input())                                       # enter time taken to prepare the dish
         if min1 <= 20:
             print("Бутерброт с маслом и сыром")
             print("Омлет в микроволновке с травами и оливками")
@@ -61,7 +62,7 @@ if level == "ребенок":
 
     else:
         print("Время приготовления(мин):")
-        min3 = int(input())                                  # enter the time taken to prepare the dish
+        min3 = int(input())                                  # enter  time taken to prepare the dish
         if min3 <= 20:
             print("Картофель с маслом из микровалновки")
             print("Помыть две большие картофелины.")
@@ -106,7 +107,7 @@ elif level == "мастер":
 
     elif meal2 == "обед":
         print("Время приготовления(мин):")
-        min5 = int(input())                                             # enter the time taken to prepare the dish
+        min5 = int(input())                                             # enter time taken to prepare the dish
         if min5 <= 40:
             print("Овощные суши")
             print("Вымыть и почистить все необходимые овощи.")
@@ -147,7 +148,7 @@ else:
     meal3 = str(input())
     if meal3 == "завтрак":
         print("Время приготовления(мин):")
-        min7 = int(input())                                           # enter the time taken to prepare the dish
+        min7 = int(input())                                           # enter  time taken to prepare the dish
         if min7 <= 20:
             print("Бутерброды с грибами")
             print("Ломтики булки с одной стороны слоем сливочного масла")
@@ -167,7 +168,7 @@ else:
 
     elif meal3 == "обед":
         print("Время приготовления(мин):")
-        min8 = int(input())                                                # enter the time taken to prepare the dish
+        min8 = int(input())                                                # enter time taken to prepare the dish
         if min8 <= 30:
             print("Куриное филе с брокколи")
             print("Куриное филе нарезать на мелкие кусочки ")
@@ -189,7 +190,7 @@ else:
 
     else:
         print("Время приготовления(мин):")
-        min8 = int(input())                                               # enter the time taken to prepare the dish
+        min8 = int(input())                                               # enter time taken to prepare the dish
         if min8 <= 30:
             print("Цветная капуста в сухарях ")
             print("Положить цветную капусту в кастрюлю, залить водой ")
